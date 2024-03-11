@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - 09</title>
+    <link href="./app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet">
+    <script>
+        // simple Js
+
+       function changeDivReverse(){
+        let option_1 = document.getElementById("option-1")
+        option_1.style.flexDirection = "row-reverse";
+       }
+
+       function changeDiv(){
+        let option_1 = document.getElementById("option-1")
+        option_1.style.flexDirection = "row";
+       }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="options">
+            <div onclick="changeDiv()" >OPTION 01</div>
+            <div onclick="changeDivReverse()">OPTION 02</div>
+            <div>OPTION 03</div>
+            <div>OPTION 04</div>
+        </div>
+    
+    <div id = "option-1" class="section-flex">
+        <div class="left">
+            <div class="image-div">
+                <svg class="image-icon" width="56" height="52" viewBox="0 0 56 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.5819 41.3597C10.8465 41.3597 7.52378 38.9404 6.31724 35.3386L6.23564 35.0672C5.95109 34.1133 5.83189 33.3112 5.83189 32.5086V16.416L0.171305 35.5296C-0.556722 38.3409 1.10227 41.2556 3.88578 42.0322L39.9663 51.8064C40.4166 51.9244 40.8669 51.981 41.3104 51.981C43.6342 51.981 45.7576 50.4208 46.3528 48.1216L48.4548 41.3597H14.5819Z" fill="#557087"/>
+                    <path d="M20.9988 16.5767C23.5726 16.5767 25.6652 14.4595 25.6652 11.856C25.6652 9.25257 23.5726 7.13531 20.9988 7.13531C18.4251 7.13531 16.332 9.25257 16.332 11.856C16.332 14.4595 18.4251 16.5767 20.9988 16.5767Z" fill="#557087"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1652 0.0544434H50.1652C53.3807 0.0544434 55.9988 2.70285 55.9988 5.95544V31.9183C55.9988 35.1709 53.3807 37.8193 50.1652 37.8193H15.1652C11.9502 37.8193 9.33203 35.1709 9.33203 31.9183V5.95544C9.33203 2.70285 11.9502 0.0544434 15.1652 0.0544434ZM50.1652 4.77515H15.1652C14.5214 4.77515 13.9988 5.30371 13.9988 5.95544V28.2339L20.4387 21.7218C22.0323 20.1076 24.6296 20.1076 26.2253 21.7218L29.0486 24.5708L37.7148 14.0489C38.4894 13.1093 39.6234 12.5665 40.832 12.5596C42.0475 12.5877 43.1793 13.0834 43.9612 14.0109L51.332 22.7111V5.95544C51.332 5.30371 50.8095 4.77515 50.1652 4.77515Z" fill="#557087"/>
+                    </svg>
+                    
+            </div>
+              <h4>Launch fast your great products.</h5>
+              <p>Start saving your time with Framer Wifreframe Web UI Kit. Hundreds of premade layouts and templates.</p>
+              <a href="">
+                 <div class="nine-button-left">DOWNLOAD NOW</div>
+              </a>
+
+        </div>
+
+        <div class="right">
+            <div class="image-div">
+                <svg class="image-icon" width="56" height="52" viewBox="0 0 56 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.5819 41.3597C10.8465 41.3597 7.52378 38.9404 6.31724 35.3386L6.23564 35.0672C5.95109 34.1133 5.83189 33.3112 5.83189 32.5086V16.416L0.171305 35.5296C-0.556722 38.3409 1.10227 41.2556 3.88578 42.0322L39.9663 51.8064C40.4166 51.9244 40.8669 51.981 41.3104 51.981C43.6342 51.981 45.7576 50.4208 46.3528 48.1216L48.4548 41.3597H14.5819Z" fill="#557087"/>
+                    <path d="M20.9988 16.5767C23.5726 16.5767 25.6652 14.4595 25.6652 11.856C25.6652 9.25257 23.5726 7.13531 20.9988 7.13531C18.4251 7.13531 16.332 9.25257 16.332 11.856C16.332 14.4595 18.4251 16.5767 20.9988 16.5767Z" fill="#557087"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1652 0.0544434H50.1652C53.3807 0.0544434 55.9988 2.70285 55.9988 5.95544V31.9183C55.9988 35.1709 53.3807 37.8193 50.1652 37.8193H15.1652C11.9502 37.8193 9.33203 35.1709 9.33203 31.9183V5.95544C9.33203 2.70285 11.9502 0.0544434 15.1652 0.0544434ZM50.1652 4.77515H15.1652C14.5214 4.77515 13.9988 5.30371 13.9988 5.95544V28.2339L20.4387 21.7218C22.0323 20.1076 24.6296 20.1076 26.2253 21.7218L29.0486 24.5708L37.7148 14.0489C38.4894 13.1093 39.6234 12.5665 40.832 12.5596C42.0475 12.5877 43.1793 13.0834 43.9612 14.0109L51.332 22.7111V5.95544C51.332 5.30371 50.8095 4.77515 50.1652 4.77515Z" fill="#557087"/>
+                    </svg>
+                    
+            </div>
+              <h4>Launch fast your great products.</h5>
+              <p>Start saving your time with Framer Wifreframe Web UI Kit. Hundreds of premade layouts and templates.</p>
+              <a href="">
+                 <div class="nine-button-right">DOWNLOAD NOW</div>
+              </a>
+
+        </div>
+    </div>
+      
+    </div>
+
+</body>
+</html>
