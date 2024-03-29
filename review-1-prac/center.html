@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ .grid-container{
+  display: grid;
+  grid-template-columns: 500px 200px 100px;
+  grid-template-rows: 90px 92px 92px;
+ }
+
+ .grid-container div{
+   background-color: green;
+   margin: 10px;
+   
+ }
+ 
+ h1{
+  position: relative;
+  z-index: 4;
+ }
+  .outer-out-box{
+    position: relative;
+
+    height: 200px;
+  width: 200px;
+  background-color: green;
+  z-index: 1;
+  }
+
+ .outbox{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color:blue ;
+  z-index: 2;
+
+ }
+.inbox{
+  position: relative;
+
+  height: 50px;
+  width: 50px;
+  z-index: 2; 
+  background-color:red;
+
+  p{
+    height: 500px;
+    width: 500px; 
+  }
+}
+</style>
+</head>
+<body>
+<h1>Flexible Boxes</h1>
+
+<!-- <div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+  
+</div>
+
+<p>Try to resize the browser window.</p>
+<p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p> -->
+
+<div class="outer-out-box">
+  <p>Hello</p>
+</div>
+<div class="outbox">
+  <p>Hello</p>
+</div>
+<div class="inbox"></div>
+
+</body>
+</html>
